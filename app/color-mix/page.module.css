@@ -1,3 +1,39 @@
+.color-mix {
+	background-color: hsl(0, 0%, 0%);
+	height: 100%;
+	padding: 1rem;
+}
+
+.color-mix header h1 {
+	color: hsl(0, 0%, 95%);
+	border: 5px solid hotpink;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
 .colors {
-	background-color: hsl(0 0% 0%);
+	border: 2px solid hsl(120, 100%, 35%);
+	border-radius: 1rem;
+	margin-top: 1rem;
+	padding: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.colors > * {
+	height: 300px;
+	width: 150px;
+}
+
+.colors > :nth-of-type(1) {
+	background-color: color-mix(in oklab, purple, white);
+}
+
+.colors > :nth-of-type(2) {
+	background-color: purple;
+}
+
+.colors > :nth-of-type(3) {
+	background-color: color-mix(in oklab, purple, black);
 }
