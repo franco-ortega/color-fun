@@ -1,7 +1,8 @@
 .color-mix {
 	background-color: hsl(0, 0%, 0%);
-	height: 100%;
+	min-height: 100%;
 	padding: 1rem;
+	color: hsl(0, 0%, 95%);
 }
 
 .color-mix header h1 {
@@ -12,10 +13,13 @@
 }
 
 .colors {
+	background-color: hsl(0, 0%, 50%, 0.25);
 	border: 2px solid hsl(120, 100%, 35%);
 	border-radius: 1rem;
-	margin-top: 1rem;
+
+	margin-block: 1rem;
 	padding: 5rem;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -50,8 +54,26 @@
 	background-color: color-mix(in oklab, var(--base) 50%, black);
 }
 .colors > :nth-of-type(8) {
-	background-color: color-mix(in oklab, var(--base 30%), black);
+	background-color: color-mix(in oklab, var(--base) 30%, black);
 }
 .colors > :nth-of-type(9) {
 	background-color: color-mix(in oklab, var(--base) 10%, black);
+}
+
+.brand {
+	background-color: var(--surface-base);
+	color: var(--text-base);
+
+	border: 2px solid var(--primary-base);
+	border-radius: 1rem;
+
+	padding: 2rem;
+
+	/* display: flex; */
+	/* alisgn-items: center; */
+	/* justify-content: center; */
+}
+
+.brand header h2 {
+	color: var(--brand);
 }

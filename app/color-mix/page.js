@@ -6,7 +6,7 @@ export default function ColorMix() {
 			<header>
 				<h1>Color Mix</h1>
 			</header>
-			<div className={styles.colors}>
+			<section className={styles.colors}>
 				<div></div>
 				<div></div>
 				<div></div>
@@ -16,7 +16,18 @@ export default function ColorMix() {
 				<div></div>
 				<div></div>
 				<div></div>
-			</div>
+			</section>
+			<section className={styles.brand}>
+				<header>
+					<h2>Brand Stuff</h2>
+				</header>
+				<div>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro harum,
+					perferendis facilis veniam ipsum repudiandae accusantium pariatur
+					minus optio in quis minima eligendi nam quaerat atque, perspiciatis
+					dolor illum beatae!
+				</div>
+			</section>
 		</main>
 	);
 }
