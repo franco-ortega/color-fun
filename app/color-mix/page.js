@@ -10,6 +10,12 @@ export default function ColorMix() {
 				<div></div>
 				<div></div>
 				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
 		</main>
 	);
