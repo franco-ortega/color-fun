@@ -6,7 +6,6 @@ import styles from './ColorMix.module.css';
 export default function ColorMix({ children }) {
 	const pathname = usePathname();
 
-	// const page = pathname.slice(11);
 	const page = pathname.slice(11, 12).toUpperCase() + pathname.slice(12);
 
 	const subtitle = page ? `: ${page}` : null;

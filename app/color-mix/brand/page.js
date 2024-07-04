@@ -2,10 +2,7 @@ import styles from './page.module.css';
 
 export default function Brand() {
 	return (
-		<main className={styles['color-mix']}>
-			<header>
-				<h1>Brand Stuff</h1>
-			</header>
+		<div className={styles['color-mix']}>
 			<section className={styles.brand}>
 				<div>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro harum,
@@ -14,6 +11,6 @@ export default function Brand() {
 					dolor illum beatae!
 				</div>
 			</section>
-		</main>
+		</div>
 	);
 }
