@@ -1,79 +1,45 @@
-.color-mix {
+.colorMix {
 	background-color: hsl(0, 0%, 0%);
 	min-height: 100%;
 	padding: 1rem;
 	color: hsl(0, 0%, 95%);
 }
 
-.color-mix header h1 {
-	color: hsl(0, 0%, 95%);
-	border: 5px solid hotpink;
-	border-radius: 1rem;
-	padding: 1rem;
+.colorMix ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
 }
 
-.colors {
-	background-color: hsl(0, 0%, 50%, 0.25);
-	border: 2px solid hsl(120, 100%, 35%);
-	border-radius: 1rem;
+.colorMix li {
+	background-color: pink;
 
-	margin-block: 1rem;
-	padding: 5rem;
+	color: var(--surface-base);
+	border-radius: 100rem;
+
+	height: 150px;
+	width: 150px;
+
+	font-size: 1.5rem;
+	font-weight: 600;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.colors > * {
-	height: 300px;
-	width: 150px;
-}
-
-.colors > :nth-of-type(1) {
-	background-color: color-mix(in oklab, var(--base) 10%, white);
-}
-.colors > :nth-of-type(2) {
-	background-color: color-mix(in oklab, var(--base) 30%, white);
-}
-.colors > :nth-of-type(3) {
-	background-color: color-mix(in oklab, var(--base) 50%, white);
-}
-.colors > :nth-of-type(4) {
-	background-color: color-mix(in oklab, var(--base) 70%, white);
-}
-
-.colors > :nth-of-type(5) {
-	background-color: var(--base);
-}
-
-.colors > :nth-of-type(6) {
-	background-color: color-mix(in oklab, var(--base) 70%, black);
-}
-.colors > :nth-of-type(7) {
-	background-color: color-mix(in oklab, var(--base) 50%, black);
-}
-.colors > :nth-of-type(8) {
-	background-color: color-mix(in oklab, var(--base) 30%, black);
-}
-.colors > :nth-of-type(9) {
-	background-color: color-mix(in oklab, var(--base) 10%, black);
-}
-
-.brand {
-	background-color: var(--surface-base);
-	color: var(--text-base);
-
-	border: 2px solid var(--primary-base);
-	border-radius: 1rem;
-
-	padding: 2rem;
-
-	/* display: flex; */
-	/* alisgn-items: center; */
-	/* justify-content: center; */
-}
-
-.brand header h2 {
-	color: var(--brand);
+.colorMix li[data='gradient'] {
+	background: linear-gradient(
+		90deg,
+		color-mix(in oklab, var(--base) 10%, white),
+		color-mix(in oklab, var(--base) 30%, white),
+		color-mix(in oklab, var(--base) 50%, white),
+		color-mix(in oklab, var(--base) 70%, white),
+		var(--base),
+		color-mix(in oklab, var(--base) 70%, black),
+		color-mix(in oklab, var(--base) 50%, black),
+		color-mix(in oklab, var(--base) 30%, black),
+		color-mix(in oklab, var(--base) 10%, black)
+	);
 }
