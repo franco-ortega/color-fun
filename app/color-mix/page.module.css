@@ -45,3 +45,20 @@
 
 	border: 2px solid var(--base);
 }
+
+.colorMix li[data='brand'] {
+	background: linear-gradient(
+		90deg,
+		color-mix(in oklab, var(--brand) 10%, white),
+		color-mix(in oklab, var(--brand) 30%, white),
+		color-mix(in oklab, var(--brand) 50%, white),
+		color-mix(in oklab, var(--brand) 70%, white),
+		var(--brand),
+		color-mix(in oklab, var(--brand) 70%, black),
+		color-mix(in oklab, var(--brand) 50%, black),
+		color-mix(in oklab, var(--brand) 30%, black),
+		color-mix(in oklab, var(--brand) 10%, black)
+	);
+
+	border: 2px solid var(--brand);
+}

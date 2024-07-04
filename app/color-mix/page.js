@@ -5,7 +5,7 @@ export default function ColorMix() {
 		<nav className={styles.colorMix}>
 			<ul>
 				<li data='gradient'>Gradient</li>
-				<li>Brand</li>
+				<li data='brand'>Brand</li>
 			</ul>
 		</nav>
 	);
