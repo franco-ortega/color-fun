@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 
-export default function ColorMix() {
+export default function Gradient() {
 	return (
 		<main className={styles['color-mix']}>
 			<header>
