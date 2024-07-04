@@ -7,15 +7,14 @@
 
 .colorMix ul {
 	list-style-type: none;
+
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 3rem;
 }
 
 .colorMix li {
-	background-color: pink;
-
-	color: var(--surface-base);
 	border-radius: 100rem;
 
 	height: 150px;
@@ -23,7 +22,6 @@
 
 	font-size: 1.5rem;
 	font-weight: 600;
-
 	text-shadow: 0 0 10px hsl(0, 0%, 0%);
 
 	display: flex;
