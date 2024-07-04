@@ -29,8 +29,10 @@
 	transition: all 1s ease;
 }
 
-.colorMix li:hover {
-	transform: scale(1.1);
+@media (hover: hover) and (pointer: fine) {
+	.colorMix li:hover {
+		transform: scale(1.1);
+	}
 }
 
 .colorMix li[data='gradient'] {
