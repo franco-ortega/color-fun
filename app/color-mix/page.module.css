@@ -42,4 +42,6 @@
 		color-mix(in oklab, var(--base) 30%, black),
 		color-mix(in oklab, var(--base) 10%, black)
 	);
+
+	border: 2px solid var(--base);
 }
