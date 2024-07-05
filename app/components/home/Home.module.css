@@ -1,0 +1,10 @@
+.Home {
+	background-color: hsl(0, 0%, 10%);
+	border: 5px solid hotpink;
+
+	padding: 1rem;
+
+	height: 100%;
+
+	color: white;
+}

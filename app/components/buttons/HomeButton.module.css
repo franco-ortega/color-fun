@@ -1,3 +1,9 @@
 .HomeButton {
-	background-color: aliceblue;
+	background: linear-gradient(90deg, var(--base), var(--brand));
+	padding: 0.25rem 0.75rem;
+	border-radius: 0.5rem;
+
+	color: var(--surface-base);
+	font-size: 1.25rem;
+	font-weight: 600;
 }
