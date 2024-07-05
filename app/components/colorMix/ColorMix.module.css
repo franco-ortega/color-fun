@@ -1,0 +1,22 @@
+.ColorMix {
+	background-color: hsl(0, 0%, 0%);
+	min-height: 100%;
+	padding: 1rem;
+	color: hsl(0, 0%, 95%);
+}
+
+.ColorMix header {
+	color: hsl(0, 0%, 95%);
+	border: 5px solid hotpink;
+	border-radius: 1rem;
+	padding: 1rem;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ColorMix header h1 {
+	color: hsl(0, 0%, 95%);
+}

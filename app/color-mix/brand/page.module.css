@@ -1,0 +1,27 @@
+.color-mix {
+	background-color: hsl(0, 0%, 0%);
+	min-height: 100%;
+	padding: 1rem;
+	color: hsl(0, 0%, 95%);
+}
+
+.color-mix header h1 {
+	color: hsl(0, 0%, 95%);
+	border: 5px solid hotpink;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.brand {
+	background-color: var(--surface-base);
+	color: var(--text-base);
+
+	border: 2px solid var(--primary-base);
+	border-radius: 1rem;
+
+	padding: 2rem;
+}
+
+.brand header h2 {
+	color: var(--brand);
+}

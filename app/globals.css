@@ -1,8 +1,39 @@
 :root {
+	--base: purple;
+
+	--brand: hsl(25, 100%, 50%);
+	--primary-base: hsl(231, 70%, 50%);
+	--surface-base: hsl(231, 30%, 95%);
+	--text-base: hsl(231, 20%, 15%);
+
+	--brand-muted: color-mix(in oklab, var(--brand) 80%, var(--surface-base));
+	--brand-vivid: color-mix(in oklab, var(--brand) 80%, var(--text-base));
+
+	--primary-muted: color-mix(
+		in oklab,
+		var(--primary-base) 80%,
+		var(--surface-base)
+	);
+
+	--primary-vivid: color-mix(
+		in oklab,
+		var(--primary-base) 80%,
+		var(--text-base)
+	);
+
+	--surface-muted: color-mix(
+		in oklab,
+		var(--surface-base) 80%,
+		var(--text-base)
+	);
+
+	--text-muted: color-mix(in oklab, var(--text-base) 80%, var(--surface-base));
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
+		--surface-base: hsl(231, 30%, 5%);
+		--text-base: hsl(231, 20%, 85%);
 	}
 }
 
@@ -39,6 +70,16 @@ button,
 textarea,
 select {
 	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
 }
 
 a {

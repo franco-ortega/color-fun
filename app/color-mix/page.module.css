@@ -1,0 +1,70 @@
+.colorMix {
+	background-color: hsl(0, 0%, 0%);
+	min-height: 100%;
+	padding: 1.5rem;
+}
+
+.colorMix ul {
+	list-style-type: none;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.colorMix li {
+	border-radius: 100rem;
+
+	height: 150px;
+	width: 150px;
+
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-shadow: 0 0 10px hsl(0, 0%, 0%);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 1s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.colorMix li:hover {
+		transform: scale(1.1);
+	}
+}
+
+.colorMix li[data='gradient'] {
+	background: linear-gradient(
+		90deg,
+		color-mix(in oklab, var(--base) 10%, white),
+		color-mix(in oklab, var(--base) 30%, white),
+		color-mix(in oklab, var(--base) 50%, white),
+		color-mix(in oklab, var(--base) 70%, white),
+		var(--base),
+		color-mix(in oklab, var(--base) 70%, black),
+		color-mix(in oklab, var(--base) 50%, black),
+		color-mix(in oklab, var(--base) 30%, black),
+		color-mix(in oklab, var(--base) 10%, black)
+	);
+
+	border: 2px solid var(--base);
+}
+
+.colorMix li[data='brand'] {
+	background: linear-gradient(
+		90deg,
+		color-mix(in oklab, var(--brand) 10%, white),
+		color-mix(in oklab, var(--brand) 30%, white),
+		color-mix(in oklab, var(--brand) 50%, white),
+		color-mix(in oklab, var(--brand) 70%, white),
+		var(--brand),
+		color-mix(in oklab, var(--brand) 70%, black),
+		color-mix(in oklab, var(--brand) 50%, black),
+		color-mix(in oklab, var(--brand) 30%, black),
+		color-mix(in oklab, var(--brand) 10%, black)
+	);
+
+	border: 2px solid var(--brand);
+}
