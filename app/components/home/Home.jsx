@@ -12,7 +12,9 @@ export default function Home() {
 					</ul>
 				</nav>
 			</header>
-			<main>Hello, color</main>;
+			<main>
+				<p>A playground to test color styles.</p>
+			</main>
 		</div>
 	);
 }
