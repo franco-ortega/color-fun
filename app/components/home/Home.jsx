@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Home.module.css';
 
 export default function Home() {
@@ -7,8 +8,9 @@ export default function Home() {
 				<h1>Color Playground</h1>
 				<nav>
 					<ul>
-						<li>Home</li>
-						<li>Link 1</li>
+						<li>
+							<Link href={'/color-mix'}>Color Mix</Link>
+						</li>
 					</ul>
 				</nav>
 			</header>
