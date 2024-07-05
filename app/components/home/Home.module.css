@@ -4,9 +4,12 @@
 
 	padding: 1rem;
 
-	height: 100%;
+	min-height: 100%;
 
 	color: white;
+
+	display: grid;
+	grid-template-rows: auto 1fr;
 }
 
 .Home header {
@@ -14,6 +17,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 1rem;
 }
 
 .Home ul {
@@ -40,8 +44,6 @@
 		hsl(275, 100%, 25%, 0.75),
 		hsl(300, 76%, 72%, 0.75)
 	);
-
-	height: 100%;
 
 	padding: 0.5rem;
 }
