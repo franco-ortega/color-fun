@@ -4,7 +4,7 @@ import styles from './HomeButton.module.css';
 export default function HomeButton() {
 	return (
 		<button className={styles.HomeButton}>
-			<Link href={'/color-mix'}>Home</Link>
+			<Link href={'/color-mix'}>Color Mix</Link>
 		</button>
 	);
 }
