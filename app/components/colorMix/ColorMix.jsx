@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation';
 import styles from './ColorMix.module.css';
 import HomeButton from '../buttons/HomeButton';
+import ButtonLink from '../buttons/ButtonLink';
 
 export default function ColorMix({ children }) {
 	const pathname = usePathname();
@@ -15,7 +16,10 @@ export default function ColorMix({ children }) {
 		<div className={styles.ColorMix}>
 			<header>
 				<h1>Color Mix{subtitle}</h1>
-				{subtitle && <HomeButton />}
+				<nav>
+					<ButtonLink text={'Home'} url={'/'} />
+					{subtitle && <ButtonLink text={'Color Mix'} url={'/color-mix'} />}
+				</nav>
 			</header>
 			<main>{children}</main>
 		</div>
