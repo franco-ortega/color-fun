@@ -1,10 +1,5 @@
-import Link from 'next/link';
-import styles from './HomeButton.module.css';
+import ButtonLink from './ButtonLink';
 
 export default function HomeButton() {
-	return (
-		<button className={styles.HomeButton}>
-			<Link href={'/color-mix'}>Color Mix</Link>
-		</button>
-	);
+	return <ButtonLink text={'Color Mix'} url={'/color-mix'} />;
 }

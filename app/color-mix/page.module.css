@@ -38,15 +38,15 @@
 .colorMix li[data='gradient'] {
 	background: linear-gradient(
 		90deg,
-		color-mix(in oklab, var(--base), 10%, white),
-		color-mix(in oklab, var(--base), 30%, white),
-		color-mix(in oklab, var(--base), 50%, white),
-		color-mix(in oklab, var(--base), 70%, white),
+		color-mix(in oklab, var(--base) 10%, white),
+		color-mix(in oklab, var(--base) 30%, white),
+		color-mix(in oklab, var(--base) 50%, white),
+		color-mix(in oklab, var(--base) 70%, white),
 		var(--base),
-		color-mix(in oklab, var(--base), 70%, black),
-		color-mix(in oklab, var(--base), 50%, black),
-		color-mix(in oklab, var(--base), 30%, black),
-		color-mix(in oklab, var(--base), 10%, black)
+		color-mix(in oklab, var(--base) 70%, black),
+		color-mix(in oklab, var(--base) 50%, black),
+		color-mix(in oklab, var(--base) 30%, black),
+		color-mix(in oklab, var(--base) 10%, black)
 	);
 
 	border: 2px solid var(--base);
