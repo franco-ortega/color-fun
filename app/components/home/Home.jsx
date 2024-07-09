@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './Home.module.css';
+import ButtonLink from '../buttons/ButtonLink';
 
 export default function Home() {
 	return (
@@ -9,7 +10,10 @@ export default function Home() {
 				<nav>
 					<ul>
 						<li>
-							<Link href={'/color-mix'}>Color Mix</Link>
+							<ButtonLink text={'HOME'} url={'/'} />
+						</li>
+						<li>
+							<ButtonLink text={'COLOR MIX'} url={'/color-mix'} />
 						</li>
 					</ul>
 				</nav>
