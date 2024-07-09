@@ -1,9 +1,8 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import styles from './ColorMix.module.css';
-import HomeButton from '../buttons/HomeButton';
 import ButtonLink from '../buttons/ButtonLink';
+import styles from './ColorMix.module.css';
 
 export default function ColorMix({ children }) {
 	const pathname = usePathname();
