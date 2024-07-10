@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google';
-import ColorMix from '../components/colorMix/ColorMix';
+import ColorMix from '../../components/colorMix/ColorMix';
 
 const inter = Inter({ subsets: ['latin'] });
 

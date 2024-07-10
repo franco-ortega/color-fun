@@ -15,6 +15,9 @@ export default function Home() {
 						<li>
 							<ButtonLink text={'COLOR MIX'} url={'/color-mix'} />
 						</li>
+						<li>
+							<ButtonLink text={'PROGRESS BAR'} url={'/progress-bar'} />
+						</li>
 					</ul>
 				</nav>
 			</header>
