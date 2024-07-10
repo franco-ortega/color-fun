@@ -1,5 +1,13 @@
 :root {
+	/* COLORS */
+	--black: hsl(0, 0%, 0%); /* black */
+	--hotpink: hsl(330, 100%, 71%); /* hotpink */
+	--white: hsl(0, 0%, 100%); /* white */
+
 	--base: purple;
+	--clr-background: var(--black);
+	--clr-font-primary: var(--white);
+	--bdr-primary: var(--hotpink);
 
 	--brand: hsl(25, 100%, 50%);
 	--primary-base: hsl(231, 70%, 50%);
@@ -43,6 +51,9 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+
+	/* outline: 1px dashed pink;
+	outline-offset: -1px; */
 }
 
 html,
@@ -54,8 +65,13 @@ body,
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+	/* ** GLOBAL FALLBACKS ** */
+	/* Firefox support: relative color */
+	background-color: hsl(0 0 10%);
 }
 
 img,
@@ -81,6 +97,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-weight: 400;
 	overflow-wrap: break-word;
 }
 
