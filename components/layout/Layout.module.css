@@ -1,5 +1,5 @@
 .Layout {
-	background-color: hsl(from var(--black) h s calc(l + 10));
+	background-color: hsl(from var(--clr-background) h s 10%);
 
 	border: 5px solid hotpink;
 
