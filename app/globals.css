@@ -1,4 +1,7 @@
 :root {
+	/* COLORS */
+	--black: hsl(0, 0%, 0%);
+
 	--base: purple;
 
 	--brand: hsl(25, 100%, 50%);
