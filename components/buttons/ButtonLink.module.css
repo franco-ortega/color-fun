@@ -3,9 +3,8 @@
 	padding: 0.25rem 0.5rem;
 	border-radius: 0.5rem;
 
-	/* color: var(--surface-base); */
-	color: aliceblue;
+	color: var(--surface-base);
 	text-rendering: auto;
-	font-size: 1.1rem;
-	font-weight: 600;
+	font-size: 1rem;
+	font-weight: 700;
 }
