@@ -9,11 +9,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-	return (
-		<html lang='en'>
-			<body className={inter.className}>
-				<ColorMix>{children}</ColorMix>
-			</body>
-		</html>
-	);
+	return <ColorMix>{children}</ColorMix>;
 }

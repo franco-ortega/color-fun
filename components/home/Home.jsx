@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import styles from './Home.module.css';
 import ButtonLink from '../buttons/ButtonLink';
+import Header from '../header/Header';
 
 export default function Home() {
 	return (
 		<div className={styles.Home}>
-			<header>
+			{/* <header>
 				<h1>Color Playground</h1>
 				<nav>
 					<ul>
@@ -20,7 +21,8 @@ export default function Home() {
 						</li>
 					</ul>
 				</nav>
-			</header>
+			</header> */}
+			{/* <Header /> */}
 			<main>
 				<p>A playground to test color styles.</p>
 			</main>
