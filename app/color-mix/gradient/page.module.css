@@ -31,16 +31,16 @@
 }
 
 .colors > :nth-of-type(1) {
-	background-color: color-mix(in oklab, var(--base), 10%, white);
+	background-color: color-mix(in oklab, var(--base) 10%, white);
 }
 .colors > :nth-of-type(2) {
-	background-color: color-mix(in oklab, var(--base), 30%, white);
+	background-color: color-mix(in oklab, var(--base) 30%, white);
 }
 .colors > :nth-of-type(3) {
-	background-color: color-mix(in oklab, var(--base), 50%, white);
+	background-color: color-mix(in oklab, var(--base) 50%, white);
 }
 .colors > :nth-of-type(4) {
-	background-color: color-mix(in oklab, var(--base), 70%, white);
+	background-color: color-mix(in oklab, var(--base) 70%, white);
 }
 
 .colors > :nth-of-type(5) {
@@ -48,14 +48,14 @@
 }
 
 .colors > :nth-of-type(6) {
-	background-color: color-mix(in oklab, var(--base), 70%, black);
+	background-color: color-mix(in oklab, var(--base) 70%, black);
 }
 .colors > :nth-of-type(7) {
-	background-color: color-mix(in oklab, var(--base), 50%, black);
+	background-color: color-mix(in oklab, var(--base) 50%, black);
 }
 .colors > :nth-of-type(8) {
-	background-color: color-mix(in oklab, var(--base), 30%, black);
+	background-color: color-mix(in oklab, var(--base) 30%, black);
 }
 .colors > :nth-of-type(9) {
-	background-color: color-mix(in oklab, var(--base), 10%, black);
+	background-color: color-mix(in oklab, var(--base) 10%, black);
 }
