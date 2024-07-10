@@ -4,17 +4,19 @@ import styles from './Header.module.css';
 function Header() {
 	return (
 		<header className={styles.Header}>
-			<h1>Color Playground</h1>
+			<div>
+				<h1>Color Playground</h1>
+			</div>
 			<nav>
 				<ul>
 					<li>
-						<ButtonLink text={'HOME'} url={'/'} />
+						<ButtonLink text={'home'} url={'/'} />
 					</li>
 					<li>
-						<ButtonLink text={'COLOR MIX'} url={'/color-mix'} />
+						<ButtonLink text={'color mix'} url={'/color-mix'} />
 					</li>
 					<li>
-						<ButtonLink text={'PROGRESS BAR'} url={'/progress-bar'} />
+						<ButtonLink text={'progress bar'} url={'/progress-bar'} />
 					</li>
 				</ul>
 			</nav>
