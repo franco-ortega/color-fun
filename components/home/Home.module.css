@@ -1,0 +1,23 @@
+.Home {
+	background: linear-gradient(
+		90deg,
+		hsl(0, 100%, 50%, 0.75),
+		hsl(39, 100%, 50%, 0.75),
+		hsl(60, 100%, 50%, 0.75),
+		hsl(120, 100%, 25%, 0.75),
+		hsl(240, 100%, 50%, 0.75),
+		hsl(275, 100%, 25%, 0.75),
+		hsl(300, 76%, 72%, 0.75)
+	);
+
+	height: 100%;
+	padding: 0.5rem;
+}
+
+.Home p {
+	width: fit-content;
+	margin-inline: auto;
+
+	font-size: 1.15rem;
+	font-weight: 500;
+}

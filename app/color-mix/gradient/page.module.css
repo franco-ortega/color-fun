@@ -1,8 +1,9 @@
 .color-mix {
 	background-color: hsl(0, 0%, 0%);
-	min-height: 100%;
+	height: 100%;
 	padding: 1rem;
 	color: hsl(0, 0%, 95%);
+	overflow: hidden;
 }
 
 .color-mix header h1 {
@@ -26,8 +27,8 @@
 }
 
 .colors > * {
-	height: 300px;
-	width: 150px;
+	height: 200px;
+	width: 10%;
 }
 
 .colors > :nth-of-type(1) {
