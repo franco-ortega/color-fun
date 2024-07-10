@@ -13,13 +13,13 @@ export default function ColorMix({ children }) {
 
 	return (
 		<div className={styles.ColorMix}>
-			<header>
+			{/* <header>
 				<h1>Color Mix{subtitle}</h1>
 				<nav>
 					<ButtonLink text={'Home'} url={'/'} />
 					{subtitle && <ButtonLink text={'Color Mix'} url={'/color-mix'} />}
 				</nav>
-			</header>
+			</header> */}
 			<main>{children}</main>
 		</div>
 	);
