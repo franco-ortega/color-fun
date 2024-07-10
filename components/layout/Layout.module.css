@@ -1,7 +1,7 @@
 .Layout {
 	background-color: hsl(from var(--clr-background) h s 10%);
 
-	border: 5px solid hotpink;
+	border: 5px solid var(--bdr-primary);
 
 	padding: 1rem;
 
