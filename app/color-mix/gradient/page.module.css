@@ -1,62 +1,46 @@
-.color-mix {
-	background-color: hsl(0, 0%, 0%);
+.colorMix {
+	background-color: hsl(0, 0%, 10%);
 	height: 100%;
 	padding: 1rem;
-	color: hsl(0, 0%, 95%);
-	overflow: hidden;
-}
-
-.color-mix header h1 {
-	color: hsl(0, 0%, 95%);
-	border: 5px solid hotpink;
-	border-radius: 1rem;
-	padding: 1rem;
-}
-
-.colors {
-	background-color: hsl(0, 0%, 50%, 0.25);
-	border: 2px solid hsl(120, 100%, 35%);
-	border-radius: 1rem;
-
-	margin-block: 1rem;
-	padding: 5rem;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: 2px solid hsl(120, 100%, 35%);
+	border: 2px solid var(--red-03);
 }
 
-.colors > * {
-	height: 200px;
-	width: 10%;
+.colorMix > * {
+	height: 100%;
+	width: clamp(20px, 10%, 100px);
 }
 
-.colors > :nth-of-type(1) {
+.colorMix > :nth-of-type(1) {
 	background-color: color-mix(in oklab, var(--base) 10%, white);
 }
-.colors > :nth-of-type(2) {
+.colorMix > :nth-of-type(2) {
 	background-color: color-mix(in oklab, var(--base) 30%, white);
 }
-.colors > :nth-of-type(3) {
+.colorMix > :nth-of-type(3) {
 	background-color: color-mix(in oklab, var(--base) 50%, white);
 }
-.colors > :nth-of-type(4) {
+.colorMix > :nth-of-type(4) {
 	background-color: color-mix(in oklab, var(--base) 70%, white);
 }
 
-.colors > :nth-of-type(5) {
+.colorMix > :nth-of-type(5) {
 	background-color: var(--base);
 }
 
-.colors > :nth-of-type(6) {
+.colorMix > :nth-of-type(6) {
 	background-color: color-mix(in oklab, var(--base) 70%, black);
 }
-.colors > :nth-of-type(7) {
+.colorMix > :nth-of-type(7) {
 	background-color: color-mix(in oklab, var(--base) 50%, black);
 }
-.colors > :nth-of-type(8) {
+.colorMix > :nth-of-type(8) {
 	background-color: color-mix(in oklab, var(--base) 30%, black);
 }
-.colors > :nth-of-type(9) {
+.colorMix > :nth-of-type(9) {
 	background-color: color-mix(in oklab, var(--base) 10%, black);
 }
