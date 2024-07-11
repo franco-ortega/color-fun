@@ -1,9 +1,9 @@
 .Header {
 	background: linear-gradient(
 		180deg,
-		hsl(350, 100%, 50%),
-		hsl(350, 100%, 35%),
-		hsl(350, 100%, 20%)
+		var(--red-01),
+		var(--red-02),
+		var(--red-03)
 	);
 
 	padding: 1rem;
@@ -14,15 +14,19 @@
 	}
 }
 
-.Header nav ul {
+.Header nav {
 	border-radius: 4px;
-	box-shadow: inset 0px 5px 10px 15px hsl(350, 100%, 18%);
-	padding: 8px;
-	list-style-type: none;
+	box-shadow: inset 0px 0px 20px 20px var(--red-04);
 
-	overflow-x: auto;
+	& ul {
+		padding: 8px;
 
-	display: flex;
-	flex-direction: row;
-	gap: 0.5rem;
+		list-style-type: none;
+
+		overflow-x: auto;
+
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+	}
 }
