@@ -46,8 +46,6 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--surface-base: hsl(231, 30%, 5%);
-		--text-base: hsl(231, 20%, 85%);
 	}
 }
 
