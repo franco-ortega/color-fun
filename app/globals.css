@@ -3,6 +3,10 @@
 	--black: hsl(0, 0%, 0%); /* black */
 	--hotpink: hsl(330, 100%, 71%); /* hotpink */
 	--white: hsl(0, 0%, 100%); /* white */
+	--red-01: hsl(350, 100%, 45%); /* */
+	--red-02: hsl(350, 100%, 35%); /* */
+	--red-03: hsl(350, 100%, 25%); /* */
+	--red-04: hsl(350, 100%, 20%); /* */
 
 	--base: purple;
 	--clr-background: var(--black);

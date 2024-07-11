@@ -1,9 +1,9 @@
 .Header {
 	background: linear-gradient(
 		180deg,
-		hsl(350, 100%, 45%),
-		hsl(350, 100%, 35%),
-		hsl(350, 100%, 25%)
+		var(--red-01),
+		var(--red-02),
+		var(--red-03)
 	);
 
 	padding: 1rem;
@@ -16,7 +16,7 @@
 
 .Header nav {
 	border-radius: 4px;
-	box-shadow: inset 0px 0px 20px 20px hsl(350, 100%, 20%);
+	box-shadow: inset 0px 0px 20px 20px var(--red-04);
 
 	& ul {
 		padding: 8px;
