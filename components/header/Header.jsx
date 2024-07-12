@@ -1,32 +1,19 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import createSubtitle from '@/utils/createSubtitle';
 import ButtonLink from '../buttons/ButtonLink';
 import styles from './Header.module.css';
 
 function Header() {
 	const pathname = usePathname();
 
-	const page = pathname
-		.substring(1)
-		.replace('-', ' ')
-		.replace('/', ' > ')
-		.split('')
-		.map((character, i, list) =>
-			list[i - 1] === undefined || list[i - 1] === ' '
-				? character.toUpperCase()
-				: character
-		)
-		.join('');
-
-	const subtitle = page ? `: ${page}` : null;
-
-	console.log('PATHNAME', pathname);
+	const subtitle = createSubtitle(pathname);
 
 	return (
 		<header className={styles.Header}>
 			<div>
-				<h1>Color Playground{subtitle && subtitle}</h1>
+				<h1>Color Playground{subtitle && `: ${subtitle}`}</h1>
 			</div>
 			<nav>
 				<ul>
