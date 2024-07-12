@@ -12,8 +12,8 @@ function Header() {
 		.replace('-', ' ')
 		.replace('/', ' > ')
 		.split('')
-		.map((character, i, arr) =>
-			arr[i - 1] === undefined || arr[i - 1] === ' '
+		.map((character, i, list) =>
+			list[i - 1] === undefined || list[i - 1] === ' '
 				? character.toUpperCase()
 				: character
 		)
