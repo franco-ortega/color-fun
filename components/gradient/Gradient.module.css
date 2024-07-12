@@ -1,4 +1,4 @@
-/* .colorMix {
+.Gradient {
 	background-color: hsl(0, 0%, 10%);
 	height: 100%;
 	padding: 1rem;
@@ -10,37 +10,37 @@
 	border: 2px solid var(--red-03);
 }
 
-.colorMix > * {
+.Gradient > * {
 	height: 100%;
 	width: clamp(20px, 10%, 100px);
 }
 
-.colorMix > :nth-of-type(1) {
+.Gradient > :nth-of-type(1) {
 	background-color: color-mix(in oklab, var(--base) 10%, white);
 }
-.colorMix > :nth-of-type(2) {
+.Gradient > :nth-of-type(2) {
 	background-color: color-mix(in oklab, var(--base) 30%, white);
 }
-.colorMix > :nth-of-type(3) {
+.Gradient > :nth-of-type(3) {
 	background-color: color-mix(in oklab, var(--base) 50%, white);
 }
-.colorMix > :nth-of-type(4) {
+.Gradient > :nth-of-type(4) {
 	background-color: color-mix(in oklab, var(--base) 70%, white);
 }
 
-.colorMix > :nth-of-type(5) {
+.Gradient > :nth-of-type(5) {
 	background-color: var(--base);
 }
 
-.colorMix > :nth-of-type(6) {
+.Gradient > :nth-of-type(6) {
 	background-color: color-mix(in oklab, var(--base) 70%, black);
 }
-.colorMix > :nth-of-type(7) {
+.Gradient > :nth-of-type(7) {
 	background-color: color-mix(in oklab, var(--base) 50%, black);
 }
-.colorMix > :nth-of-type(8) {
+.Gradient > :nth-of-type(8) {
 	background-color: color-mix(in oklab, var(--base) 30%, black);
 }
-.colorMix > :nth-of-type(9) {
+.Gradient > :nth-of-type(9) {
 	background-color: color-mix(in oklab, var(--base) 10%, black);
-} */
+}
