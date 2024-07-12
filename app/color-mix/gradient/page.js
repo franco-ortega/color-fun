@@ -1,19 +1,5 @@
-import styles from './page.module.css';
+import Gradient from '@/components/gradient/Gradient';
 
-export default function Gradient() {
-	return (
-		<div className={styles['color-mix']}>
-			<div className={styles.colors}>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-	);
+export default function GradientPage() {
+	return <Gradient />;
 }

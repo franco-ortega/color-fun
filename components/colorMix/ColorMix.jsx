@@ -11,16 +11,5 @@ export default function ColorMix({ children }) {
 
 	const subtitle = page ? `: ${page}` : null;
 
-	return (
-		<div className={styles.ColorMix}>
-			{/* <header>
-				<h1>Color Mix{subtitle}</h1>
-				<nav>
-					<ButtonLink text={'Home'} url={'/'} />
-					{subtitle && <ButtonLink text={'Color Mix'} url={'/color-mix'} />}
-				</nav>
-			</header> */}
-			<main>{children}</main>
-		</div>
-	);
+	return <main className={styles.ColorMix}>{children}</main>;
 }
