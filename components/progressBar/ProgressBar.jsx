@@ -18,7 +18,7 @@ function ProgressBar() {
 			</div>
 			<br />
 			<div>
-				<input onChange={onProgressChange} type='number' />
+				<input onChange={onProgressChange} type='number' max={100} min={0} />
 			</div>
 		</div>
 	);
