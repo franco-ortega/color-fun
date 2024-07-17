@@ -7,6 +7,9 @@ function ProgressBar() {
 			<div>
 				<div></div>
 			</div>
+			<div>
+				<input type='number' />
+			</div>
 		</div>
 	);
 }

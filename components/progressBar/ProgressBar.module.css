@@ -1,3 +1,15 @@
 .ProgressBar {
 	background-color: lightblue;
 }
+
+.ProgressBar > div {
+	width: 300px;
+	background-color: beige;
+	padding: 5px;
+}
+
+.ProgressBar > div > div {
+	height: 10px;
+	width: 100%;
+	background-color: blue;
+}
