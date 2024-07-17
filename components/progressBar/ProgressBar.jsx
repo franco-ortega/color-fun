@@ -6,17 +6,17 @@ function ProgressBar() {
 	const [progress, setProgress] = useState(0);
 
 	function onProgressChange(e) {
-		setProgress(e.target.value);
+		if (e.target.value <= 100) setProgress(e.target.value);
 	}
-
-	console.log(progress);
 
 	return (
 		<div className={styles.ProgressBar}>
 			<h2>ProgressBar</h2>
 			<div>
-				<div></div>
+				<p>{progress && `${progress}% complete`}</p>
+				<div style={{ width: `${progress}%` }}></div>
 			</div>
+			<br />
 			<div>
 				<input onChange={onProgressChange} type='number' />
 			</div>

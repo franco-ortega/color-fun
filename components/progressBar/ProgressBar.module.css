@@ -1,10 +1,10 @@
 .ProgressBar {
-	background-color: lightblue;
+	/* background-color: lightblue; */
 }
 
 .ProgressBar > div {
 	width: 300px;
-	background-color: beige;
+	background-color: rgb(109, 109, 27);
 	padding: 5px;
 }
 
