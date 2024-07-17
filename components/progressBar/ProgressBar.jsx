@@ -18,7 +18,15 @@ function ProgressBar() {
 			</div>
 			<br />
 			<div>
-				<input onChange={onProgressChange} type='number' max={100} min={0} />
+				<label htmlFor='progress-bar'>
+					<input
+						id='"progress-bar"'
+						onChange={onProgressChange}
+						type='number'
+						max={100}
+						min={0}
+					/>
+				</label>
 			</div>
 		</div>
 	);
