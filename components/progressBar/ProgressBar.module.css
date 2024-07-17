@@ -14,3 +14,12 @@
 	background-color: blue;
 	/* box-shadow: inset 2px 2px 2px 10px pink; */
 }
+
+.ProgressBar span {
+	margin-right: 5px;
+}
+
+.ProgressBar input {
+	background-color: rgb(240, 146, 146);
+	padding: 2px 4px;
+}

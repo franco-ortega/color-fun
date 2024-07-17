@@ -19,10 +19,12 @@ function ProgressBar() {
 			<br />
 			<div>
 				<label htmlFor='progress-bar'>
+					<span>Adjust progress:</span>
 					<input
 						id='"progress-bar"'
 						onChange={onProgressChange}
 						type='number'
+						defaultValue={0}
 						max={100}
 						min={0}
 					/>
