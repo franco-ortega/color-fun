@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import ProgressBar from '@/components/progressBar/ProgressBar';
 
-export default function ProgressBar() {
-	return <main>PROGRESS BAR</main>;
+export default function ProgressBarPage() {
+	return (
+		<main>
+			<ProgressBar />
+		</main>
+	);
 }
