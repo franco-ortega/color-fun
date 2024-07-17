@@ -13,7 +13,7 @@ function ProgressBar() {
 		<div className={styles.ProgressBar}>
 			<h2>ProgressBar</h2>
 			<div>
-				<p>{progress && `${progress}% complete`}</p>
+				<p>{`${progress}% complete`}</p>
 				<div style={{ width: `${progress}%` }}></div>
 			</div>
 			<br />
