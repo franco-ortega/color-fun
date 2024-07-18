@@ -16,7 +16,7 @@
 /* Progress Bar shell */
 .ProgressBar > div > div {
 	background-color: hsl(0deg, 0%, 50%, 0.15);
-	box-shadow: inset 0px 0px 2px 4px hsl(0deg, 0%, 50%, 0.35);
+	box-shadow: inset 0px 2px 4px hsl(0deg, 0%, 50%, 0.35);
 	border-radius: 4px;
 }
 
