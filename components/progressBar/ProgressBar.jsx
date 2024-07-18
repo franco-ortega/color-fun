@@ -20,17 +20,21 @@ function ProgressBar() {
 			</div>
 			<br />
 			<div>
-				<label htmlFor='progress-bar'>
-					<span>Adjust progress:</span>
-					<input
-						id='progress-bar'
-						onChange={onProgressChange}
-						type='number'
-						defaultValue={0}
-						max={100}
-						min={0}
-					/>
-				</label>
+				<p>Adjust progress</p>
+				<div>
+					<button>⬆</button>
+					<label htmlFor='progress-bar'>
+						<input
+							id='progress-bar'
+							onChange={onProgressChange}
+							type='number'
+							defaultValue={0}
+							max={100}
+							min={0}
+						/>
+					</label>
+					<button>⬇︎</button>
+				</div>
 			</div>
 		</div>
 	);
