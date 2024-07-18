@@ -9,19 +9,22 @@
 /* Progress Bar wrapper */
 .ProgressBar > div:first-of-type {
 	background-color: hsl(0, 0%, 100%);
+	border-radius: 4px;
+	overflow: hidden;
 }
 
 /* Progress Bar shell */
 .ProgressBar > div > div {
 	background-color: hsl(0deg, 0%, 50%, 0.15);
 	box-shadow: inset 0px 0px 2px 4px hsl(0deg, 0%, 50%, 0.35);
+	border-radius: 4px;
 }
 
 /* Progress Bar indicator */
 .ProgressBar > div > div > div {
-	height: 20px;
-	width: 100%;
 	background-color: blue;
+	border-radius: 4px 0px 0 4px;
+	height: 8px;
 }
 
 /* Adjust Progress section */
