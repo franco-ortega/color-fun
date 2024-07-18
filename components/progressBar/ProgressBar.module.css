@@ -35,6 +35,10 @@
 	text-align: center;
 }
 
+.ProgressBar > div:nth-of-type(2) > p {
+	font-weight: 600;
+}
+
 .ProgressBar > div:nth-of-type(2) > div {
 	background-color: hsl(0deg, 0%, 75%, 0.15);
 	box-shadow: inset 0px 2px 4px hsl(0deg, 0%, 50%, 0.35);
