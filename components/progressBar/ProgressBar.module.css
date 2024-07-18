@@ -1,15 +1,17 @@
 .ProgressBar {
-	/* background-color: lightblue; */
+	/* background-color: white; */
 }
 
-.ProgressBar > div {
+.ProgressBar > div:first-of-type {
 	width: 300px;
-	background-color: rgb(109, 109, 27);
-	padding: 5px;
+	background-color: hsl(0, 0%, 100%);
+
+	background-color: hsl(0, 0% 55%);
+	box-shadow: inset 0px 2px 4px hsl(0, 0%, 75%);
 }
 
 .ProgressBar > div > div {
-	height: 10px;
+	height: 20px;
 	width: 100%;
 	background-color: blue;
 	/* box-shadow: inset 2px 2px 2px 10px pink; */
