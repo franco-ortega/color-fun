@@ -14,14 +14,16 @@ function ProgressBar() {
 			<h2>Progress Bar</h2>
 			<p>{`${progress}% complete`}</p>
 			<div>
-				<div style={{ width: `${progress}%` }}></div>
+				<div>
+					<div style={{ width: `${progress}%` }}></div>
+				</div>
 			</div>
 			<br />
 			<div>
 				<label htmlFor='progress-bar'>
 					<span>Adjust progress:</span>
 					<input
-						id='"progress-bar"'
+						id='progress-bar'
 						onChange={onProgressChange}
 						type='number'
 						defaultValue={0}

@@ -2,19 +2,31 @@
 	/* background-color: white; */
 }
 
-.ProgressBar > div:first-of-type {
+.ProgressBar > div {
 	width: 300px;
-	background-color: hsl(0, 0%, 100%);
-
-	background-color: hsl(0, 0% 55%);
-	box-shadow: inset 0px 2px 4px hsl(0, 0%, 75%);
 }
 
+/* Progress Bar wrapper */
+.ProgressBar > div:first-of-type {
+	background-color: hsl(0, 0%, 100%);
+}
+
+/* Progress Bar shell */
 .ProgressBar > div > div {
+	background-color: hsl(0deg, 0%, 50%, 0.15);
+	box-shadow: inset 0px 0px 2px 4px hsl(0deg, 0%, 50%, 0.35);
+}
+
+/* Progress Bar indicator */
+.ProgressBar > div > div > div {
 	height: 20px;
 	width: 100%;
 	background-color: blue;
-	/* box-shadow: inset 2px 2px 2px 10px pink; */
+}
+
+/* Adjust Progress section */
+.ProgressBar > div:nth-of-type(2) {
+	background-color: rgb(145, 3, 131);
 }
 
 .ProgressBar span {
