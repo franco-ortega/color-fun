@@ -6,20 +6,16 @@ function ProgressBar() {
 	const [progress, setProgress] = useState(0);
 
 	function onProgressChange(e) {
-		if (e.target.value <= 100) setProgress(e.target.value);
+		if (e.target.value <= 100) setProgress(Number(e.target.value));
 	}
 
 	function onProgressIncrease() {
-		console.log('increase');
 		if (progress < 100) setProgress((prev) => Number(prev) + 1);
 	}
 
 	function onProgressDecrease() {
-		console.log('decrease');
 		if (progress > 0) setProgress((prev) => Number(prev) - 1);
 	}
-
-	console.log('PROGRESS:', progress);
 
 	return (
 		<div className={styles.ProgressBar}>
