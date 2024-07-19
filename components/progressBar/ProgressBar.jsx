@@ -9,26 +9,45 @@ function ProgressBar() {
 		if (e.target.value <= 100) setProgress(e.target.value);
 	}
 
+	function onProgressIncrease() {
+		console.log('increase');
+		if (progress < 100) setProgress((prev) => Number(prev) + 1);
+	}
+
+	function onProgressDecrease() {
+		console.log('decrease');
+		if (progress > 0) setProgress((prev) => Number(prev) - 1);
+	}
+
+	console.log('PROGRESS:', progress);
+
 	return (
 		<div className={styles.ProgressBar}>
 			<h2>Progress Bar</h2>
 			<p>{`${progress}% complete`}</p>
 			<div>
-				<div style={{ width: `${progress}%` }}></div>
+				<div>
+					<div style={{ width: `${progress}%` }}></div>
+				</div>
 			</div>
 			<br />
 			<div>
-				<label htmlFor='progress-bar'>
-					<span>Adjust progress:</span>
-					<input
-						id='"progress-bar"'
-						onChange={onProgressChange}
-						type='number'
-						defaultValue={0}
-						max={100}
-						min={0}
-					/>
-				</label>
+				<p>ADJUST PROGRESS</p>
+				<div>
+					<button onClick={onProgressIncrease}>⬆</button>
+					<label htmlFor='progress-bar'>
+						<input
+							id='progress-bar'
+							onChange={onProgressChange}
+							type='number'
+							defaultValue={0}
+							value={progress}
+							max={100}
+							min={0}
+						/>
+					</label>
+					<button onClick={onProgressDecrease}>⬇︎</button>
+				</div>
 			</div>
 		</div>
 	);
