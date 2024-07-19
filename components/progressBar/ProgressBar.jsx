@@ -34,7 +34,7 @@ function ProgressBar() {
 			<div>
 				<p>ADJUST PROGRESS</p>
 				<div>
-					<button onClick={onProgressIncrease}>⬆</button>
+					<button onClick={onProgressIncrease}>⬆︎</button>
 					<label htmlFor='progress-bar'>
 						<input
 							id='progress-bar'
