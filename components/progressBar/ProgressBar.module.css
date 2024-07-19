@@ -1,5 +1,6 @@
 .ProgressBar {
-	/* background-color: white; */
+	width: fit-content;
+	margin-inline: auto;
 }
 
 .ProgressBar > div {
