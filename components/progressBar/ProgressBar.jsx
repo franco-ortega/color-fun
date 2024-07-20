@@ -26,7 +26,7 @@ function ProgressBar() {
 					<div style={{ width: `${progress}%` }}></div>
 				</div>
 			</div>
-			<br />
+
 			<div>
 				<p>ADJUST PROGRESS</p>
 				<div>
