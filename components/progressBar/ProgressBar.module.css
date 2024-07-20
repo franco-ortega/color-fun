@@ -1,6 +1,28 @@
 .ProgressBar {
 	width: fit-content;
 	margin-inline: auto;
+	/* outline: solid 2px yellow; */
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.ProgressBar * {
+	/* outline: dashed 2px yellow; */
+}
+
+.ProgressBar h2 {
+	width: fit-content;
+	margin-inline: auto;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.ProgressBar > div:first-of-type p {
+	width: fit-content;
+	margin-inline: auto;
+	font-weight: 600;
 }
 
 .ProgressBar > div {
@@ -8,7 +30,7 @@
 }
 
 /* Progress Bar wrapper */
-.ProgressBar > div:first-of-type {
+.ProgressBar > div:first-of-type > div {
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 4px;
 	overflow: hidden;
@@ -17,13 +39,13 @@
 /* Progress Bar shell */
 .ProgressBar > div:first-of-type > div {
 	background-color: hsl(0deg, 0%, 50%, 0.15);
-	box-shadow: inset 0px 2px 4px hsl(0deg, 0%, 50%, 0.35);
+	/* box-shadow: inset 0px 2px 4px hsl(0deg, 0%, 50%, 0.35); */
 	box-shadow: inset 0 0 2px 2px hsl(300, 100%, 50%);
 	border-radius: 4px;
 }
 
 /* Progress Bar indicator */
-.ProgressBar > div > div > div {
+.ProgressBar > div:first-of-type > div > div {
 	background-color: hsl(240, 100%, 50%);
 	border-radius: 4px 0px 0 4px;
 	height: 8px;
