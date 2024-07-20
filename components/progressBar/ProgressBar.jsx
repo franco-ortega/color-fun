@@ -20,10 +20,12 @@ function ProgressBar() {
 	return (
 		<div className={styles.ProgressBar}>
 			<h2>Progress Bar</h2>
-			<p>{`${progress}% complete`}</p>
 			<div>
+				<p>{`${progress}% complete`}</p>
 				<div>
-					<div style={{ width: `${progress}%` }}></div>
+					<div>
+						<div style={{ width: `${progress}%` }}></div>
+					</div>
 				</div>
 			</div>
 
