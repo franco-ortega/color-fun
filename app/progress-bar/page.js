@@ -27,7 +27,8 @@ export default function ProgressBarPage() {
 			<div className={styles.adjust}>
 				<p>ADJUST PROGRESS</p>
 				<div>
-					<button onClick={onProgressIncrease}>⬆︎</button>
+					<button onClick={onProgressDecrease}>⬇︎</button>
+
 					<label htmlFor='progress-bar'>
 						<input
 							id='progress-bar'
@@ -38,7 +39,7 @@ export default function ProgressBarPage() {
 							min={0}
 						/>
 					</label>
-					<button onClick={onProgressDecrease}>⬇︎</button>
+					<button onClick={onProgressIncrease}>⬆︎</button>
 				</div>
 			</div>
 		</main>
