@@ -38,7 +38,6 @@ function ProgressBar() {
 							id='progress-bar'
 							onChange={onProgressChange}
 							type='number'
-							defaultValue={0}
 							value={progress}
 							max={100}
 							min={0}
