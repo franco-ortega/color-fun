@@ -9,7 +9,8 @@ export default function ProgressBarPage() {
 	const [progress, setProgress] = useState(0);
 
 	function onProgressChange(e) {
-		if (e.target.value <= 100) setProgress(Number(e.target.value));
+		if (e.target.value >= 0 && e.target.value <= 100)
+			setProgress(Number(e.target.value));
 	}
 
 	function onProgressIncrease() {
