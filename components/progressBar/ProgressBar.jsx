@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './ProgressBar.module.css';
 
 function ProgressBar({ progress }) {
