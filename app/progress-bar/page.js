@@ -22,14 +22,7 @@ export default function ProgressBarPage() {
 	return (
 		<main className={styles.main}>
 			<h2>Progress Bar</h2>
-			{/* <div>
-				<p>{`${progress}% complete`}</p>
-				<div>
-					<div>
-						<div style={{ width: `${progress}%` }}></div>
-					</div>
-				</div>
-			</div> */}
+			<ProgressBar progress={progress} />
 
 			<div className={styles.adjust}>
 				<p>ADJUST PROGRESS</p>
@@ -48,7 +41,6 @@ export default function ProgressBarPage() {
 					<button onClick={onProgressDecrease}>⬇︎</button>
 				</div>
 			</div>
-			<ProgressBar />
 		</main>
 	);
 }
