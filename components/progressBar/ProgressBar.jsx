@@ -9,7 +9,11 @@ const SIZES = {
 		'--borderRadius': `${4 / 16}rem`,
 		'--height': `${12 / 16}rem`,
 	},
-	large: { '--borderRadius': `${8 / 16}rem`, '--height': `${24 / 16}rem` },
+	large: {
+		'--borderRadius': `${8 / 16}rem`,
+		'--height': `${24 / 16}rem`,
+		'--padding': `${4 / 16}rem`,
+	},
 };
 
 function ProgressBar({ size, value }) {
