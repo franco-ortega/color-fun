@@ -21,4 +21,5 @@
 	background-color: hsl(240, 100%, 70%);
 	border-radius: 4px 0px 0 4px;
 	height: var(--height);
+	width: var(--width);
 }

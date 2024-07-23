@@ -30,7 +30,7 @@ function ProgressBar({ size, value }) {
 			aria-valuemax={100}
 		>
 			<div>
-				<div style={{ width: `${value}%` }}>
+				<div style={{ '--width': `${value}%` }}>
 					<VisuallyHidden>{value}%</VisuallyHidden>
 				</div>
 			</div>
