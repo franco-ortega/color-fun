@@ -1,3 +1,4 @@
+import VisuallyHidden from '../visuallyHidden/VisuallyHidden';
 import styles from './ProgressBar.module.css';
 
 const SIZES = {
@@ -29,7 +30,9 @@ function ProgressBar({ size, value }) {
 			aria-valuemax={100}
 		>
 			<div>
-				<div style={{ width: `${value}%` }}></div>
+				<div style={{ width: `${value}%` }}>
+					<VisuallyHidden>{value}%</VisuallyHidden>
+				</div>
 			</div>
 		</div>
 	);
