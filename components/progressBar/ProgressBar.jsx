@@ -20,7 +20,14 @@ function ProgressBar({ size, value }) {
 	const progressBarStyles = SIZES[size];
 
 	return (
-		<div className={styles.ProgressBar} style={progressBarStyles}>
+		<div
+			className={styles.ProgressBar}
+			style={progressBarStyles}
+			role='progressbar'
+			aria-valuenow={value}
+			aria-valuemin={0}
+			aria-valuemax={100}
+		>
 			<div>
 				<div style={{ width: `${value}%` }}></div>
 			</div>
