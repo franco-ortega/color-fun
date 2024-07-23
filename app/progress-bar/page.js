@@ -13,7 +13,17 @@ export default function ProgressBarPage() {
 
 			<div>
 				<p>{`${value}% complete`}</p>
+				<ProgressBar size={'small'} value={value} />
+			</div>
+
+			<div>
+				<p>{`${value}% complete`}</p>
 				<ProgressBar size={'medium'} value={value} />
+			</div>
+
+			<div>
+				<p>{`${value}% complete`}</p>
+				<ProgressBar size={'large'} value={value} />
 			</div>
 
 			<div className={styles.adjust}>
