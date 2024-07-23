@@ -23,8 +23,11 @@ export default function ProgressBarPage() {
 	return (
 		<main className={styles.main}>
 			<h2>Progress Bar</h2>
-			<p>{`${progress}% complete`}</p>
-			<ProgressBar progress={progress} size={'medium'} />
+
+			<div>
+				<p>{`${progress}% complete`}</p>
+				<ProgressBar progress={progress} size={'medium'} />
+			</div>
 
 			<div className={styles.adjust}>
 				<p>ADJUST PROGRESS</p>

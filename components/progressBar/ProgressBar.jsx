@@ -1,11 +1,13 @@
 import styles from './ProgressBar.module.css';
 
 const SIZES = {
-	small: {},
+	small: {
+		'--height': `${8 / 16}rem`,
+	},
 	medium: {
 		'--height': `${12 / 16}rem`,
 	},
-	large: {},
+	large: { '--height': `${24 / 16}rem` },
 };
 
 function ProgressBar({ progress, size }) {
