@@ -23,6 +23,7 @@ export default function ProgressBarPage() {
 	return (
 		<main className={styles.main}>
 			<h2>Progress Bar</h2>
+			<p>{`${progress}% complete`}</p>
 			<ProgressBar progress={progress} />
 
 			<div className={styles.adjust}>
