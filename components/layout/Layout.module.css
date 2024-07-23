@@ -2,7 +2,7 @@
 	background-color: hsl(from var(--clr-background) h s 10%);
 	border: 5px solid var(--bdr-primary);
 
-	height: 100%;
+	min-height: 100%;
 
 	padding: 1rem;
 
