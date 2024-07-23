@@ -18,7 +18,11 @@
 .adjust {
 	background-color: rgb(145, 3, 131);
 	border-radius: 4px;
+
+	margin-inline: auto;
 	padding: 0.5rem;
+	width: fit-content;
+
 	text-align: center;
 }
 
