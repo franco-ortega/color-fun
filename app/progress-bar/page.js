@@ -1,50 +1,37 @@
 'use client';
 
-import Link from 'next/link';
-import styles from './page.module.css';
+import useValue from '@/hooks/useValue';
 import ProgressBar from '@/components/progressBar/ProgressBar';
-import { useState } from 'react';
+import styles from './page.module.css';
 
 export default function ProgressBarPage() {
-	const [progress, setProgress] = useState(0);
+	const { onValueChange, onValueDecrease, onValueIncrease, value } = useValue();
 
-	function onProgressChange(e) {
-		if (e.target.value >= 0 && e.target.value <= 100)
-			setProgress(Number(e.target.value));
-	}
-
-	function onProgressIncrease() {
-		if (progress < 100) setProgress((prev) => Number(prev) + 1);
-	}
-
-	function onProgressDecrease() {
-		if (progress > 0) setProgress((prev) => Number(prev) - 1);
-	}
 	return (
 		<main className={styles.main}>
 			<h2>Progress Bar</h2>
 
 			<div>
-				<p>{`${progress}% complete`}</p>
-				<ProgressBar progress={progress} size={'medium'} />
+				<p>{`${value}% complete`}</p>
+				<ProgressBar size={'medium'} value={value} />
 			</div>
 
 			<div className={styles.adjust}>
 				<p>ADJUST PROGRESS</p>
 				<div>
-					<button onClick={onProgressDecrease}>⬇︎</button>
+					<button onClick={onValueDecrease}>⬇︎</button>
 
 					<label htmlFor='progress-bar'>
 						<input
 							id='progress-bar'
-							onChange={onProgressChange}
+							onChange={onValueChange}
 							type='number'
-							value={progress}
+							value={value}
 							max={100}
 							min={0}
 						/>
 					</label>
-					<button onClick={onProgressIncrease}>⬆︎</button>
+					<button onClick={onValueIncrease}>⬆︎</button>
 				</div>
 			</div>
 		</main>

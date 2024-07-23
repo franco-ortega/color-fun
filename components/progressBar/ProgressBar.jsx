@@ -10,14 +10,12 @@ const SIZES = {
 	large: { '--height': `${24 / 16}rem` },
 };
 
-function ProgressBar({ progress, size }) {
+function ProgressBar({ size, value }) {
 	const progressBarStyles = SIZES[size];
-
-	console.log(progressBarStyles);
 
 	return (
 		<div className={styles.ProgressBar} style={progressBarStyles}>
-			<div style={{ width: `${progress}%` }}></div>
+			<div style={{ width: `${value}%` }}></div>
 		</div>
 	);
 }
