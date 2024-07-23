@@ -2,16 +2,23 @@
 	background-color: hsl(0, 0%, 100%);
 	box-shadow: inset 0 2px 4px 2px hsl(300, 100%, 70%);
 	border-radius: var(--borderRadius);
-	overflow: hidden;
+	/* overflow: hidden; */
 
-	width: 300px;
-	height: var(--height);
+	width: 350px;
 	padding: var(--padding);
+	overflow: hidden;
+}
+
+/* progress indicator wrapper */
+.ProgressBar > div {
+	/* border-radius: inherit; */
+	height: 100%;
+	overflow: hidden;
 }
 
 /* progress indicator */
-.ProgressBar > div {
+.ProgressBar > div > div {
 	background-color: hsl(240, 100%, 70%);
 	border-radius: 4px 0px 0 4px;
-	height: 100%;
+	height: var(--height);
 }

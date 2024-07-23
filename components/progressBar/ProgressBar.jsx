@@ -11,7 +11,7 @@ const SIZES = {
 	},
 	large: {
 		'--borderRadius': `${8 / 16}rem`,
-		'--height': `${24 / 16}rem`,
+		'--height': `${(24 - 4 * 2) / 16}rem`,
 		'--padding': `${4 / 16}rem`,
 	},
 };
@@ -21,7 +21,9 @@ function ProgressBar({ size, value }) {
 
 	return (
 		<div className={styles.ProgressBar} style={progressBarStyles}>
-			<div style={{ width: `${value}%` }}></div>
+			<div>
+				<div style={{ width: `${value}%` }}></div>
+			</div>
 		</div>
 	);
 }
