@@ -1,36 +1,46 @@
 import VisuallyHidden from '../visuallyHidden/VisuallyHidden';
 import styles from './ProgressBar.module.css';
 
-const SIZES = {
+const STYLES = {
 	small: {
-		'--borderRadius': `${4 / 16}rem`,
-		'--height': `${8 / 16}rem`,
+		height: 8,
+		padding: 0,
+		radius: 4,
 	},
 	medium: {
-		'--borderRadius': `${4 / 16}rem`,
-		'--height': `${12 / 16}rem`,
+		height: 12,
+		padding: 0,
+		radius: 4,
 	},
 	large: {
-		'--borderRadius': `${8 / 16}rem`,
-		'--height': `${(24 - 4 * 2) / 16}rem`,
-		'--padding': `${4 / 16}rem`,
+		height: 16,
+		padding: 4,
+		radius: 8,
 	},
 };
 
 function ProgressBar({ size, value }) {
-	const progressBarStyles = SIZES[size];
+	const progressBarStyles = STYLES[size];
 
 	return (
 		<div
-			className={styles.ProgressBar}
-			style={progressBarStyles}
 			role='progressbar'
 			aria-valuenow={value}
 			aria-valuemin={0}
 			aria-valuemax={100}
+			className={styles.ProgressBar}
+			style={{
+				'--padding': progressBarStyles.padding + 'px',
+				'--radius': progressBarStyles.radius + 'px',
+			}}
 		>
 			<div>
-				<div style={{ '--width': `${value}%` }}>
+				<div
+					style={{
+						'--width': `${value}%`,
+						'--height': progressBarStyles.height + 'px',
+					}}
+				>
 					<VisuallyHidden>{value}%</VisuallyHidden>
 				</div>
 			</div>
