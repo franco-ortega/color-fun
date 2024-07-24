@@ -5,6 +5,8 @@ import styles from './ProgressAdjuster.module.css';
 export default function ProgressAdjuster({ size }) {
 	const { onValueChange, onValueDecrease, onValueIncrease, value } = useValue();
 
+	const id = `progress-bar-${size}`;
+
 	return (
 		<div className={styles.ProgressAdjuster}>
 			<h3>{size} Progress Bar</h3>
@@ -19,9 +21,9 @@ export default function ProgressAdjuster({ size }) {
 				<div>
 					<button onClick={onValueDecrease}>⬇︎</button>
 
-					<label htmlFor='progress-bar'>
+					<label htmlFor={id}>
 						<input
-							id='progress-bar'
+							id={id}
 							onChange={onValueChange}
 							type='number'
 							value={value}
