@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './Button.module.css';
 
 export default function Button({ handler, text }) {
@@ -8,10 +6,11 @@ export default function Button({ handler, text }) {
 		'--boxShadowHover': 'var(--red-00)',
 	};
 
-	const testClick = handler ? handler : () => console.log('clicked');
+	if (!text) throw Error('Missing text prop');
+	if (!handler) throw Error('Missing handler');
 
 	return (
-		<button className={styles.Button} style={buttonColors} onClick={testClick}>
+		<button className={styles.Button} style={buttonColors} onClick={handler}>
 			{text}
 		</button>
 	);
