@@ -7,10 +7,13 @@ export default function ProgressAdjuster({ size }) {
 
 	return (
 		<div className={styles.ProgressAdjuster}>
+			<h3>{size} Progress Bar</h3>
+
 			<div>
 				<p>{`${value}% complete`}</p>
 				<ProgressBar size={size} value={value} />
 			</div>
+
 			<div>
 				<p>ADJUST PROGRESS</p>
 				<div>

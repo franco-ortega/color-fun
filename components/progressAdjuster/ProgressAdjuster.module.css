@@ -1,15 +1,22 @@
 .ProgressAdjuster {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-
-	/* outline: dashed 1px yellow; */
+	border: solid 2px hsl(0, 100%, 50%);
+	border-radius: 8px;
+	padding: 8px;
 }
 
-.ProgressAdjuster > div:nth-of-type(2) > p {
+.ProgressAdjuster > h3 {
 	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+	text-transform: capitalize;
 }
 
+/* container for progress bar */
+.ProgressAdjuster > div:nth-of-type(1) {
+	margin-bottom: 1rem;
+}
+
+/* container for adjust progress */
 .ProgressAdjuster > div:nth-of-type(2) {
 	background-color: rgb(145, 3, 131);
 	border-radius: 4px;
@@ -17,8 +24,11 @@
 	margin-inline: auto;
 	padding: 0.5rem;
 	width: fit-content;
+}
 
+.ProgressAdjuster > div:nth-of-type(2) > p {
 	text-align: center;
+	font-weight: 600;
 }
 
 .ProgressAdjuster > div:nth-of-type(2) > div {
@@ -27,14 +37,14 @@
 	padding: 0.25rem;
 }
 
-.ProgressAdjuster input {
+.ProgressAdjuster > div:nth-of-type(2) input {
 	background-color: rgb(240, 146, 146);
 	border-radius: 4px;
 	padding: 2px 4px;
 	margin-inline: 10px;
 }
 
-.ProgressAdjuster button {
+.ProgressAdjuster > div:nth-of-type(2) button {
 	background-color: hsl(0, 0%, 100%);
 	border: 2px solid hsl(300, 100%, 15%);
 	border-radius: 100rem;
