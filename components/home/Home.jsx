@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<main className={styles.Home}>
 			<p>A playground to test color styles.</p>
-			<Button />
+			<Button text='CLICK ME' />
 		</main>
 	);
 }
