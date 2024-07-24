@@ -59,6 +59,7 @@ export default function ProgressBarPage() {
 				</>
 			) : (
 				<div className={styles.wrapper}>
+					<h3>Progress Bar</h3>
 					{sizes.map(({ id, size }) => (
 						<div key={id}>
 							<p>{`${value}% complete`}</p>

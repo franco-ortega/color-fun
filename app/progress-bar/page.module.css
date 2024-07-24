@@ -49,6 +49,13 @@
 	gap: 1rem;
 }
 
+.wrapper > h3 {
+	width: fit-content;
+	margin-inline: auto;
+	font-weight: 600;
+	line-height: 1;
+}
+
 .adjust {
 	background-color: rgb(145, 3, 131);
 	border-radius: 4px;
