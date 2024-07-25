@@ -3,6 +3,7 @@
 import Button from '@/components/buttons/Button';
 import styles from './page.module.css';
 import GradientButton from '@/components/buttons/GradientButton';
+import DualButton from '@/components/buttons/DualButton';
 
 const COLORS = {
 	light: 'hsl(0, 0%, 100%)',
@@ -135,6 +136,13 @@ function CombinedButtonRows() {
 			<div>
 				<p>Gradient Buttons</p>
 				<GradientButtonRow />
+			</div>
+
+			<div>
+				<p>Dual Buttons</p>
+				<div className={styles.buttonWrapper}>
+					<DualButton />
+				</div>
 			</div>
 		</>
 	);
