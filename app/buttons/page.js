@@ -2,6 +2,7 @@
 
 import Button from '@/components/buttons/Button';
 import styles from './page.module.css';
+import GradientButton from '@/components/buttons/GradientButton';
 
 const COLORS = {
 	light: 'hsl(0, 0%, 100%)',
@@ -23,6 +24,31 @@ function mediumAlert() {
 
 function darkAlert() {
 	return buttonAlert('dark');
+}
+
+export default function ButtonsPage() {
+	return (
+		<main className={styles.main}>
+			<h2 className={styles.heading}>Button Testing Playground</h2>
+
+			<div className={styles.wrapper}>
+				<section className={styles.column}>
+					<h3 className={styles.heading}>Light Background</h3>
+					<CombinedButtonRows />
+				</section>
+
+				<section className={styles.column}>
+					<h3 className={styles.heading}>Medium Background</h3>
+					<CombinedButtonRows />
+				</section>
+
+				<section className={styles.column}>
+					<h3 className={styles.heading}>Dark Background</h3>
+					<CombinedButtonRows />
+				</section>
+			</div>
+		</main>
+	);
 }
 
 function ButtonRow() {
@@ -62,27 +88,54 @@ function ButtonRow() {
 	);
 }
 
-export default function ButtonsPage() {
+const testGradientButtonStyles = {
+	gradientStyles: {
+		deg: 90,
+		colors: ['red', 'orange', 'yellow'],
+	},
+	shadowStyles: {
+		color: 'gold',
+		hover: 'red',
+	},
+};
+
+function GradientButtonRow() {
 	return (
-		<main className={styles.main}>
-			<h2 className={styles.heading}>Button Testing Playground</h2>
+		<div className={styles.buttonWrapper}>
+			<GradientButton
+				handler={lightAlert}
+				text={'LIGHT'}
+				gradientStyles={testGradientButtonStyles.gradientStyles}
+				shadowStyles={testGradientButtonStyles.shadowStyles}
+			/>
+			<GradientButton
+				handler={mediumAlert}
+				text={'MEDIUM'}
+				gradientStyles={testGradientButtonStyles.gradientStyles}
+				shadowStyles={testGradientButtonStyles.shadowStyles}
+			/>
+			<GradientButton
+				handler={darkAlert}
+				text={'DARK'}
+				gradientStyles={testGradientButtonStyles.gradientStyles}
+				shadowStyles={testGradientButtonStyles.shadowStyles}
+			/>
+		</div>
+	);
+}
 
-			<div className={styles.wrapper}>
-				<section className={styles.column}>
-					<h3 className={styles.heading}>Light</h3>
-					<ButtonRow />
-				</section>
-
-				<section className={styles.column}>
-					<h3 className={styles.heading}>Medium</h3>
-					<ButtonRow />
-				</section>
-
-				<section className={styles.column}>
-					<h3 className={styles.heading}>Dark</h3>
-					<ButtonRow />
-				</section>
+function CombinedButtonRows() {
+	return (
+		<>
+			<div>
+				<p>Plain Buttons</p>
+				<ButtonRow />
 			</div>
-		</main>
+
+			<div>
+				<p>Gradient Buttons</p>
+				<GradientButtonRow />
+			</div>
+		</>
 	);
 }
