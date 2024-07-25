@@ -29,7 +29,7 @@ function darkAlert() {
 export default function ButtonsPage() {
 	return (
 		<main className={styles.main}>
-			<h2 className={styles.heading}>Button Testing Playground</h2>
+			<h2 className={styles.heading}>Button Playground</h2>
 
 			<div className={styles.wrapper}>
 				<section className={styles.column}>
