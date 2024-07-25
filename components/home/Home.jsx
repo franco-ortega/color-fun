@@ -9,7 +9,7 @@ export default function Home() {
 		<main className={styles.Home}>
 			<p>A playground to test color styles.</p>
 			<Button
-				buttonStyles={{}}
+				buttonStyles={{ '--background': 'blue' }}
 				handler={() => console.log('BUTTON clicked')}
 				text={'BUTTON'}
 			/>
@@ -22,7 +22,10 @@ export default function Home() {
 					deg: 90,
 					colors: ['var(--base)', 'var(--brand)'],
 				}}
-				hoverColor={'var(--red-00)'}
+				shadowStyles={{
+					color: 'hsl(50, 100%, 50%, 0.9)',
+					hover: 'var(--red-00)',
+				}}
 			/>
 		</main>
 	);

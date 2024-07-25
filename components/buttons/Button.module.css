@@ -1,11 +1,12 @@
 .Button {
-	--boxShadow: hsl(50, 100%, 50%, 0.9);
-	--boxShadowHover: inset 0 0 2px 1px var(--boxShadow);
+	--clr-shadow: hsl(50, 100%, 50%, 0.9);
+	--box-shadow: inset 0 0 2px 1px var(--clr-shadow);
+	--box-shadow-hov: var(--box-shadow);
 
 	background: var(--background);
 	border-radius: 4px;
 	border: none;
-	box-shadow: inset 0 0 2px 1px var(--boxShadow);
+	box-shadow: var(--box-shadow);
 
 	padding: 0.25rem 0.5rem;
 
@@ -25,6 +26,6 @@
 
 @media (hover: hover) {
 	.Button:hover {
-		box-shadow: var(--boxShadowHover);
+		box-shadow: var(--box-shadow-hov);
 	}
 }

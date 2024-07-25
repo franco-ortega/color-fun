@@ -4,7 +4,7 @@ export default function GradientButton({
 	handler,
 	text,
 	gradientStyles,
-	hoverColor,
+	shadowStyles,
 }) {
 	if (!gradientStyles.colors.length)
 		throw Error('GradientButton missing background colors');
@@ -16,10 +16,11 @@ export default function GradientButton({
 		gradientStyles.deg
 	}deg, ${gradientStyles.colors.join(', ')})`;
 
-	const buttonColors = {
+	const buttonStyles = {
 		'--background': background,
-		'--boxShadowHover': `inset 0 0 2px 20px ${hoverColor}`,
+		'--box-shadow': `inset 0 0 2px 1px ${shadowStyles.color}`,
+		'--box-shadow-hov': `inset 0 0 2px 20px ${shadowStyles.hover}`,
 	};
 
-	return <Button buttonStyles={buttonColors} handler={handler} text={text} />;
+	return <Button buttonStyles={buttonStyles} handler={handler} text={text} />;
 }
