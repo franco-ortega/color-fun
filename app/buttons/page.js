@@ -141,7 +141,7 @@ function CombinedButtonRows() {
 			<div>
 				<p>Dual Buttons</p>
 				<div className={styles.buttonWrapper}>
-					<DualButton />
+					<DualButton hsl1={'0 90% 60%'} hsl2={'0 90% 60%'} fade={0.75} />
 				</div>
 			</div>
 		</>

@@ -2,9 +2,8 @@ import { useState } from 'react';
 import Button from './Button';
 import styles from './DualButton.module.css';
 
-export default function DualButton() {
+export default function DualButton({ hsl1, hsl2, fade }) {
 	const [toggleLeft, setToggleLeft] = useState(true);
-	const faded = 0.75;
 
 	function onToggleLeft() {
 		setToggleLeft(true);
@@ -18,8 +17,8 @@ export default function DualButton() {
 		<div className={styles.DualButton}>
 			<Button
 				buttonStyles={{
-					fontWeight: toggleLeft ? '700' : '500',
-					'--opacity': toggleLeft ? 1 : faded,
+					fontWeight: toggleLeft ? '600' : '500',
+					'--background': `hsl(${hsl1} / ${toggleLeft ? 1 : fade})`,
 					'--box-shadow': 'none',
 				}}
 				handler={onToggleLeft}
@@ -27,8 +26,8 @@ export default function DualButton() {
 			/>
 			<Button
 				buttonStyles={{
-					fontWeight: !toggleLeft ? '700' : '500',
-					'--opacity': !toggleLeft ? 1 : faded,
+					fontWeight: !toggleLeft ? '600' : '500',
+					'--background': `hsl(${hsl2} / ${!toggleLeft ? 1 : fade})`,
 					'--box-shadow': 'none',
 				}}
 				handler={onToggleRight}
