@@ -18,6 +18,10 @@
 	white-space: nowrap;
 }
 
+.Button:focus-visible {
+	outline: 2px solid var(--clr-shadow);
+}
+
 @media (prefers-reduced-motion: no-preference) {
 	.Button {
 		transition: box-shadow 500ms ease-in-out;
