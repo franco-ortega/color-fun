@@ -5,9 +5,10 @@ import ProgressAdjuster from '@/components/progressAdjuster/ProgressAdjuster';
 import ProgressBar from '@/components/progressBar/ProgressBar';
 import styles from './page.module.css';
 import { useState } from 'react';
+import DualButton from '@/components/buttons/DualButton';
 
 export default function ProgressBarPage() {
-	const [displayMultipleBars, setDisplayMultipleBars] = useState(true);
+	const [displayMultiple, setDisplayMultiple] = useState(true);
 	const { onValueChange, onValueDecrease, onValueIncrease, value } = useValue();
 	const sizes = [
 		{ id: 1, size: 'small' },
@@ -15,43 +16,33 @@ export default function ProgressBarPage() {
 		{ id: 3, size: 'large' },
 	];
 
-	const faded = 0.75;
-
 	function onToggle() {
-		setDisplayMultipleBars((prev) => !prev);
+		setDisplayMultiple((prev) => !prev);
 	}
 
 	function onMultiple() {
-		setDisplayMultipleBars(true);
+		setDisplayMultiple(true);
 	}
 
 	function onSingle() {
-		setDisplayMultipleBars(false);
+		setDisplayMultiple(false);
 	}
 
 	return (
 		<main className={styles.main}>
 			<h2>Progress Bar</h2>
-			<div>
-				<button
-					onClick={onMultiple}
-					style={{
-						'--opacity': displayMultipleBars ? 1 : faded,
-					}}
-				>
-					Multiple
-				</button>
-				<button
-					onClick={onSingle}
-					style={{
-						'--opacity': !displayMultipleBars ? 1 : faded,
-					}}
-				>
-					Single
-				</button>
-			</div>
+			<DualButton
+				handler1={onMultiple}
+				handler2={onSingle}
+				hsl1={'0 90% 60%'}
+				hsl2={'0 90% 60%'}
+				fade={0.75}
+				text1={'Multiple'}
+				text2={'Single'}
+				toggleOn={displayMultiple}
+			/>
 
-			{displayMultipleBars ? (
+			{displayMultiple ? (
 				<>
 					<ProgressAdjuster size={'small'} value={value} />
 					<ProgressAdjuster size={'medium'} value={value} />

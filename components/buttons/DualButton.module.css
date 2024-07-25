@@ -1,11 +1,8 @@
 .DualButton {
-	background-color: transparent;
+	background-color: white;
 }
 
 .DualButton button {
-	background-color: hsl(0, 90%, 60%, var(--opacity));
-	background-color: var(--background);
-	border: none;
 	outline: 1px solid black;
 }
 

@@ -4,6 +4,7 @@ import Button from '@/components/buttons/Button';
 import styles from './page.module.css';
 import GradientButton from '@/components/buttons/GradientButton';
 import DualButton from '@/components/buttons/DualButton';
+import { useState } from 'react';
 
 const COLORS = {
 	light: 'hsl(0, 0%, 100%)',
@@ -25,6 +26,14 @@ function mediumAlert() {
 
 function darkAlert() {
 	return buttonAlert('dark');
+}
+
+function leftAlert() {
+	return buttonAlert('left');
+}
+
+function rightAlert() {
+	return buttonAlert('right');
 }
 
 export default function ButtonsPage() {
@@ -126,6 +135,22 @@ function GradientButtonRow() {
 }
 
 function CombinedButtonRows() {
+	const [onToggle, setOnToggle] = useState(true);
+
+	function onToggleLeft() {
+		setOnToggle(true);
+		setTimeout(() => {
+			buttonAlert('left');
+		}, 100);
+	}
+
+	function onToggleRight() {
+		setOnToggle(false);
+		setTimeout(() => {
+			buttonAlert('right');
+		}, 100);
+	}
+
 	return (
 		<>
 			<div>
@@ -139,9 +164,18 @@ function CombinedButtonRows() {
 			</div>
 
 			<div>
-				<p>Dual Buttons</p>
+				<p>Plain Dual Buttons</p>
 				<div className={styles.buttonWrapper}>
-					<DualButton hsl1={'0 90% 60%'} hsl2={'0 90% 60%'} fade={0.75} />
+					<DualButton
+						handler1={onToggleLeft}
+						handler2={onToggleRight}
+						hsl1={'0 90% 50%'}
+						hsl2={'0 90% 50%'}
+						fade={0.5}
+						text1={'LEFT'}
+						text2={'RIGHT'}
+						toggleOn={onToggle}
+					/>
 				</div>
 			</div>
 		</>
