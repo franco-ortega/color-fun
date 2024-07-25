@@ -1,0 +1,46 @@
+.main {
+	background-color: hsl(0, 0%, 20%);
+	border: 5px orange solid;
+
+	padding: 1rem;
+}
+
+.heading {
+	width: fit-content;
+	margin-inline: auto;
+	font-weight: 500;
+}
+
+.wrapper {
+	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+.column {
+	/* border: green 2px solid; */
+	padding: 0.5rem;
+}
+
+.column:nth-of-type(1) {
+	background-color: hsl(0, 0%, 100%);
+	/* border: green 2px solid; */
+	color: hsl(0, 0%, 20%);
+}
+
+.column:nth-of-type(2) {
+	background-color: hsl(0, 0%, 50%);
+	/* border: green 2px solid; */
+}
+
+.column:nth-of-type(3) {
+	background-color: hsl(0, 0%, 0%);
+	/* border: green 2px solid; */
+}
+
+.buttonWrapper {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+}
