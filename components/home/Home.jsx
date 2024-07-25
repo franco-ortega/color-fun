@@ -8,7 +8,11 @@ export default function Home() {
 	return (
 		<main className={styles.Home}>
 			<p>A playground to test color styles.</p>
-			<Button handler={() => console.log('BUTTON clicked')} text={'BUTTON'} />
+			<Button
+				buttonStyles={{}}
+				handler={() => console.log('BUTTON clicked')}
+				text={'BUTTON'}
+			/>
 			<br />
 			<br />
 			<GradientButton
