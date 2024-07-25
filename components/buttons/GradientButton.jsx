@@ -17,10 +17,10 @@ export default function GradientButton({
 	};
 
 	if (!backgroundColors)
-		throw Error('GradientButton missing background color(s)');
+		throw Error('GradientButton missing background colors');
 
 	if (backgroundColors.length < 2)
-		throw Error('GradientButton did not receive multiple color(s)');
+		throw Error('GradientButton did not receive multiple colors');
 
 	return <Button buttonStyles={buttonColors} handler={handler} text={text} />;
 }
