@@ -7,17 +7,20 @@ export default function GradientButton({
 	backgroundColors,
 	hoverColor,
 }) {
-	const background =
-		backgroundColors.length > 1
-			? `linear-gradient(${deg}deg, ${backgroundColors.join(', ')})`
-			: backgroundColors[0];
+	const background = `linear-gradient(${deg}deg, ${backgroundColors.join(
+		', '
+	)})`;
 
 	const buttonColors = {
 		'--background': background,
 		'--boxShadowHover': `inset 0 0 2px 20px ${hoverColor}`,
 	};
 
-	if (!backgroundColors) throw Error('Missing background color(s)');
+	if (!backgroundColors)
+		throw Error('GradientButton missing background color(s)');
+
+	if (backgroundColors.length < 2)
+		throw Error('GradientButton did not receive multiple color(s)');
 
 	return <Button buttonStyles={buttonColors} handler={handler} text={text} />;
 }
