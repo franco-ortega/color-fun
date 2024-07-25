@@ -14,8 +14,10 @@ export default function Home() {
 			<GradientButton
 				handler={() => console.log('GRADIENT clicked')}
 				text={'GRADIENT'}
-				deg={90}
-				backgroundColors={['var(--base)', 'var(--brand)']}
+				gradientStyles={{
+					deg: 90,
+					colors: ['var(--base)', 'var(--brand)'],
+				}}
 				hoverColor={'var(--red-00)'}
 			/>
 		</main>
