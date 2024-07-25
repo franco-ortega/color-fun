@@ -1,28 +1,11 @@
 import styles from './Button.module.css';
 
-export default function Button({
-	handler,
-	text,
-	deg,
-	backgroundColors,
-	hoverColor,
-}) {
-	const background =
-		backgroundColors.length > 1
-			? `linear-gradient(${deg}deg, ${backgroundColors.join(', ')})`
-			: backgroundColors[0];
-
-	const buttonColors = {
-		'--background': background,
-		'--boxShadowHover': hoverColor,
-	};
-
-	if (!backgroundColors) throw Error('Missing background color(s)');
-	if (!text) throw Error('Missing text prop');
-	if (!handler) throw Error('Missing handler prop');
+export default function Button({ buttonStyles, handler, text }) {
+	if (!text) throw Error('Button component missing text prop');
+	if (!handler) throw Error('Button component missing handler prop');
 
 	return (
-		<button className={styles.Button} style={buttonColors} onClick={handler}>
+		<button className={styles.Button} style={buttonStyles} onClick={handler}>
 			{text}
 		</button>
 	);
