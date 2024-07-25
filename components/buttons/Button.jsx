@@ -18,7 +18,7 @@ export default function Button({
 	};
 
 	if (!text) throw Error('Missing text prop');
-	if (!handler) throw Error('Missing handler');
+	if (!handler) throw Error('Missing handler prop');
 
 	return (
 		<button className={styles.Button} style={buttonColors} onClick={handler}>
