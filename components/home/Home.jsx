@@ -11,8 +11,7 @@ export default function Home() {
 				handler={() => console.log('clicked')}
 				text='CLICK ME'
 				deg={90}
-				color1={'var(--base)'}
-				color2={'var(--brand)'}
+				backgroundColors={['var(--base)', 'var(--brand)']}
 				hoverColor={'var(--red-00)'}
 			/>
 		</main>

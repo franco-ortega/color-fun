@@ -4,12 +4,16 @@ export default function Button({
 	handler,
 	text,
 	deg,
-	color1,
-	color2,
+	backgroundColors,
 	hoverColor,
 }) {
+	const background =
+		backgroundColors.length > 1
+			? `linear-gradient(${deg}deg, ${backgroundColors.join(', ')})`
+			: backgroundColors[0];
+
 	const buttonColors = {
-		'--backgroundGradient': `linear-gradient(${deg}deg, ${color1}, ${color2})`,
+		'--background': background,
 		'--boxShadowHover': hoverColor,
 	};
 
