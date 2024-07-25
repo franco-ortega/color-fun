@@ -1,5 +1,4 @@
 import Button from './Button';
-import styles from './GradientButton.module.css';
 
 export default function GradientButton({
 	handler,
@@ -15,14 +14,10 @@ export default function GradientButton({
 
 	const buttonColors = {
 		'--background': background,
-		'--boxShadowHover': hoverColor,
+		'--boxShadowHover': `inset 0 0 2px 20px ${hoverColor}`,
 	};
 
 	if (!backgroundColors) throw Error('Missing background color(s)');
 
-	return (
-		<div className={styles.GradientButton}>
-			<Button buttonStyles={buttonColors} handler={handler} text={'GRADIENT'} />
-		</div>
-	);
+	return <Button buttonStyles={buttonColors} handler={handler} text={text} />;
 }
