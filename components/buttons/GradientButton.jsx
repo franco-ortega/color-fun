@@ -1,5 +1,17 @@
 import Button from './Button';
 
+// GradientButton props:
+//
+// gradientStyles={{
+//   deg: NUMBER,
+//   colors: ARRAY of COLORS as STRINGS
+// }}
+//
+// shadowStyles={{
+//   color: COLOR as STRING,
+//   hover: COLOR as STRING
+// }}
+
 export default function GradientButton({
 	handler,
 	text,
@@ -12,13 +24,13 @@ export default function GradientButton({
 	if (gradientStyles.colors.length < 2)
 		throw Error('GradientButton did not receive multiple colors');
 
-	const background = `linear-gradient(${
+	const gradient = `linear-gradient(${
 		gradientStyles.deg
 	}deg, ${gradientStyles.colors.join(', ')})`;
 
 	const buttonStyles = {
-		'--background': background,
-		'--box-shadow': `inset 0 0 2px 1px ${shadowStyles.color}`,
+		'--background': gradient,
+		'--clr-shadow': `${shadowStyles.color}`,
 		'--box-shadow-hov': `inset 0 0 2px 20px ${shadowStyles.hover}`,
 	};
 

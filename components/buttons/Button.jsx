@@ -1,5 +1,10 @@
 import styles from './Button.module.css';
 
+// Button custom props:
+//  --clr-shadow: COLOR
+//  --box-shadow: BOX-SHADOW
+//  --box-shadow-hov: BOX-SHADOW on HOVER
+
 export default function Button({ buttonStyles, handler, text }) {
 	if (!buttonStyles || !handler || !text)
 		throw Error(
