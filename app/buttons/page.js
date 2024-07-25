@@ -9,6 +9,22 @@ const COLORS = {
 	dark: 'hsl(0, 0%, 0%)',
 };
 
+function buttonAlert(button) {
+	alert(`${button.toUpperCase()} button`);
+}
+
+function lightAlert() {
+	return buttonAlert('light');
+}
+
+function mediumAlert() {
+	return buttonAlert('medium');
+}
+
+function darkAlert() {
+	return buttonAlert('dark');
+}
+
 function ButtonRow() {
 	return (
 		<div className={styles.buttonWrapper}>
@@ -19,7 +35,7 @@ function ButtonRow() {
 					color: 'black',
 					textShadow: 'none',
 				}}
-				handler={() => console.log('Light button clicked')}
+				handler={lightAlert}
 				text={'LIGHT'}
 			/>
 			<Button
@@ -29,7 +45,7 @@ function ButtonRow() {
 					color: 'white',
 					textShadow: 'none',
 				}}
-				handler={() => console.log('Light button clicked')}
+				handler={mediumAlert}
 				text={'MEDIUM'}
 			/>
 			<Button
@@ -39,7 +55,7 @@ function ButtonRow() {
 					color: 'white',
 					textShadow: 'none',
 				}}
-				handler={() => console.log('Light button clicked')}
+				handler={darkAlert}
 				text={'DARK'}
 			/>
 		</div>
