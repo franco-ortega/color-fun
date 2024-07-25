@@ -17,6 +17,7 @@ export default function Button({
 		'--boxShadowHover': hoverColor,
 	};
 
+	if (!backgroundColors) throw Error('Missing background color(s)');
 	if (!text) throw Error('Missing text prop');
 	if (!handler) throw Error('Missing handler prop');
 
