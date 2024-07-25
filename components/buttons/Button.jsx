@@ -1,9 +1,16 @@
 import styles from './Button.module.css';
 
-export default function Button({ handler, text }) {
+export default function Button({
+	handler,
+	text,
+	deg,
+	color1,
+	color2,
+	hoverColor,
+}) {
 	const buttonColors = {
-		'--backgroundGradient': 'linear-gradient(90deg, var(--base), var(--brand))',
-		'--boxShadowHover': 'var(--red-00)',
+		'--backgroundGradient': `linear-gradient(${deg}deg, ${color1}, ${color2})`,
+		'--boxShadowHover': hoverColor,
 	};
 
 	if (!text) throw Error('Missing text prop');
