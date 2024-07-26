@@ -19,7 +19,7 @@
 }
 
 .column {
-	padding: 0.5rem;
+	padding: 1rem 0.5rem;
 	max-width: 25rem;
 
 	flex-grow: 1;
@@ -54,6 +54,10 @@
 	padding-inline: 0.25rem;
 
 	font-weight: 500;
+}
+
+.column div + div > p {
+	margin-top: 1rem;
 }
 
 .buttonWrapper {
