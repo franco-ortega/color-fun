@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Button from './Button';
 import styles from './DualButton.module.css';
 

@@ -1,11 +1,11 @@
 'use client';
 
+import { useState } from 'react';
 import useValue from '@/hooks/useValue';
+import DualButton from '@/components/buttons/DualButton';
 import ProgressAdjuster from '@/components/progressAdjuster/ProgressAdjuster';
 import ProgressBar from '@/components/progressBar/ProgressBar';
 import styles from './page.module.css';
-import { useState } from 'react';
-import DualButton from '@/components/buttons/DualButton';
 
 export default function ProgressBarPage() {
 	const [displayMultiple, setDisplayMultiple] = useState(true);

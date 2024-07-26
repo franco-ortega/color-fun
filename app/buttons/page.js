@@ -1,10 +1,10 @@
 'use client';
 
-import Button from '@/components/buttons/Button';
-import styles from './page.module.css';
-import GradientButton from '@/components/buttons/GradientButton';
-import DualButton from '@/components/buttons/DualButton';
 import { useState } from 'react';
+import Button from '@/components/buttons/Button';
+import DualButton from '@/components/buttons/DualButton';
+import GradientButton from '@/components/buttons/GradientButton';
+import styles from './page.module.css';
 
 const COLORS = {
 	light: 'hsl(0, 0%, 100%)',
@@ -101,11 +101,11 @@ function ButtonRow() {
 const testGradientButtonStyles = {
 	gradientStyles: {
 		deg: 90,
-		colors: ['red', 'orange', 'yellow'],
+		colors: ['var(--base)', 'var(--brand)'],
 	},
 	shadowStyles: {
-		color: 'gold',
-		hover: 'red',
+		color: 'hsl(50, 100%, 50%, 0.9)',
+		hover: 'var(--red-00)',
 	},
 };
 
@@ -171,7 +171,7 @@ function CombinedButtonRows() {
 						handler2={onToggleRight}
 						hsl1={'0 90% 50%'}
 						hsl2={'0 90% 50%'}
-						fade={0.5}
+						fade={0.7}
 						text1={'LEFT'}
 						text2={'RIGHT'}
 						toggleOn={onToggle}
