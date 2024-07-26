@@ -56,6 +56,21 @@ export default function ButtonsPage() {
 					<h3 className={styles.heading}>Dark Background</h3>
 					<CombinedButtonRows />
 				</section>
+
+				<section className={styles.column}>
+					<h3 className={styles.heading}>Blue Background</h3>
+					<CombinedButtonRows />
+				</section>
+
+				<section className={styles.column}>
+					<h3 className={styles.heading}>Green Background</h3>
+					<CombinedButtonRows />
+				</section>
+
+				<section className={styles.column}>
+					<h3 className={styles.heading}>Red Background</h3>
+					<CombinedButtonRows />
+				</section>
 			</div>
 		</main>
 	);
