@@ -26,6 +26,9 @@ function Header() {
 					<li>
 						<ButtonLink text={'progress bar'} url={'/progress-bar'} />
 					</li>
+					<li>
+						<ButtonLink text={'buttons'} url={'/buttons'} />
+					</li>
 				</ul>
 			</nav>
 		</header>

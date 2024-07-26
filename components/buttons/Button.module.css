@@ -1,0 +1,35 @@
+.Button {
+	--clr-shadow: hsl(50, 100%, 50%, 0.9);
+	--box-shadow: inset 0 0 2px 1px var(--clr-shadow);
+	--box-shadow-hov: var(--box-shadow);
+
+	background: var(--background);
+	border-radius: 4px;
+	border: none;
+	box-shadow: var(--box-shadow);
+
+	padding: 0.25rem 0.5rem;
+
+	color: var(--surface-base);
+	font-size: 1rem;
+	font-weight: 700;
+	text-shadow: 0 0 25px hsl(0, 0%, 0%, 0.75);
+
+	white-space: nowrap;
+}
+
+.Button:focus-visible {
+	outline: 2px solid var(--clr-shadow);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.Button {
+		transition: box-shadow 500ms ease-in-out;
+	}
+}
+
+@media (hover: hover) {
+	.Button:hover {
+		box-shadow: var(--box-shadow-hov);
+	}
+}
